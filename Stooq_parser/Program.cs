@@ -24,6 +24,7 @@ namespace Stooq_parser
             Url = "http://s.stooq.pl/pp/g.js"; //GPW 
 
             //Create grabber
+            // *Use FilePersister to save data to a text file
             var grabber = new StocksGrabber(Url, new StooqGpwParser(), new ConsolePersister());
 
             //Run timer
